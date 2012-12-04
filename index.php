@@ -23,6 +23,28 @@
                     <?php else: ?>
                         <p><?= $row['body']; ?></p>
                     <?php endif;?>
+                    <?php if ($row['image_id'] != NULL): ?>
+                        <?php
+                            $image_id = $row['image_id'];
+                            $sql = "SELECT * FROM images LEFT OUTER JOIN posts ON images.id = posts.image_id WHERE posts.image_id = '$image_id'";
+                            $image_result = $db->query($sql);
+                            
+                            if ($image_result->num_rows != 0){
+                                while ($image_row = $image_result->fetch_assoc()){
+                                    $filename = $image_row['filename'];
+                                    
+                                    // Substring to grab the last 4 characters (.jpg, .png, .gif)
+                                    $file_type = substr($filename, strlen($filename) - 4);
+                                    $image = substr($filename, 0, strlen($filename) - 4);
+                                }
+                            }
+                            else{
+                                $image_result = false;
+                            }
+                            
+                        ?>
+                            <br /><img src="upload/<?= $image."_thumb".$file_type ?>" alt="<?= $image ?>" /><br />
+                    <?php endif; ?>
                     <a href="edit.php?id=<?= $row['id'] ?>">Edit</a>
                 </div>
             <?php endwhile; ?>
