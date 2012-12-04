@@ -1,0 +1,163 @@
+body{
+    background: url("images/bg13662.png") fixed;
+    margin-top: 10px;
+    padding: 0;
+    height: 100%;
+}
+
+#wrapper{
+    width: 700px;
+    margin: 0px auto;
+    font-family: "Day", georgia, serif;
+    background: white;
+    border: 2px solid #dc241f;
+    border-radius: 2px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active{
+    text-decoration: underline;
+    color: black;
+}
+
+.date{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    border-radius: 2px;
+    width: 100%;
+    height: 125px;
+    padding: 0px;
+    border-bottom: 2px solid #dc241f;
+}
+
+#header img{
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+h1,h2,h3{
+    font-family: "Legacy", georgia, serif;
+}
+
+#sidebar{
+    float: right;
+    border: 2px solid #dc241f;
+    border-right: none;
+    border-radius: 2px;
+}
+
+#sidebar h3{
+    border: 2px solid #dc241f;
+    background: #DC241F;
+    margin: 0;
+}
+
+#navigation{
+    background: white;
+    border-radius: 2px;
+}
+
+#navigation ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navigation li{
+    display: inline;
+    border: 2px solid #dc241f;
+    border-radius: 2px;
+}
+
+#navigation a:link,
+#navigation a:visited{
+    background: #DC241F;
+    color: black;
+}
+
+#navigation a:hover,
+#navigation a:active{
+    color: black;
+    background: white;
+}
+
+#sidebar ul{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+#sidebar a:hover,
+#sidebar a:active{
+    color: black;
+    text-decoration: underline;
+}
+#content{
+    float: left;
+    width: 40%;
+    margin: 0px auto;
+    padding: 5px;
+    font-family: "Day", georgia, serif;
+}
+
+.posting{
+    width: 85%;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.posting ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#content{
+    margin: 20px;
+}
+
+#content p{
+    font-family: "Legacy", serif;
+}
+
+
+#footer{
+    clear: both;
+    margin-top: 10px;
+}
+
+#footer p{
+    text-align: center;
+}
+
+#footer img{
+    display: block;
+    margin: 0px auto;
+}
+
+@font-face {
+  font-family: "Legacy";
+  src: url("fonts/legacysansstd-webfont.eot");
+  src: local("?"),
+    url("fonts/legacysansstd-webfont.ttf") format("ttf"),
+    url("fonts/legacysansstd-webfont.woff") format("woff"),
+    url("fonts/legacysansstd-webfont.svg") format("svg")
+}
+
+@font-face {
+  font-family: "Day";
+  src: url("fonts/day-webfont.eot");
+  src: local("?"),
+    url("fonts/day-webfont.ttf") format("ttf"),
+    url("fonts/day-webfont.woff") format("woff"),
+    url("fonts/day-webfont.svg") format("svg")
+}
